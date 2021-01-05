@@ -1,0 +1,7 @@
+package com.tw.login.proto;
+
+enum EnmCmdID
+{
+    CS_LOGIN_REQ = 10001;//登录请求协议号
+    CS_LOGIN_RES = 10002;//登录请求回包协议号
+}

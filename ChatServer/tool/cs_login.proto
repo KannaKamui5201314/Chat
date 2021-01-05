@@ -1,0 +1,18 @@
+package com.tw.login.proto;
+
+    message CSLoginInfo
+    {
+        required string UserName = 1;//账号
+        required string Password = 2;//密码
+    }
+
+    //发送登录请求
+    message CSLoginReq
+    {
+        required CSLoginInfo LoginInfo = 1; 
+    }
+    //登录请求回包数据
+    message CSLoginRes
+    {
+        required uint32 result_code = 1; 
+    }
